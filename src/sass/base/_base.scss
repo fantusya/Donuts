@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white-cl);
+    color: var(--black-cl);
+    font-family: 'Josefin Sans', sans-serif;
+    @include fonts(500, 24px, 30px, 0.03em);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

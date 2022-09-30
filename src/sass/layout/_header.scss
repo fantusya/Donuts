@@ -1,0 +1,44 @@
+.header__container {
+    display: flex;
+    align-items: center;
+    max-width: 566px;
+    width: 100%
+
+    /* background-color: rgba(240, 255, 240, 0.5); */
+}
+
+.header__logo {
+    @include fonts(400, 23px, 1.14, 0.03em);
+
+    @include mq(new-hero) {
+        @include fonts(400, 30px, 1.5, 0.04em);
+    }
+    font-family: Aboreto, cursive;
+
+    color: black;
+}
+
+.header__button {
+    margin-left: auto;
+    
+    border: 1px solid transparent;
+    width: 35px;
+    height: 35px;
+
+    @include mq(new-hero) {
+        width: 40px;
+        height: 40px;
+    }
+
+    color: black;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.header__icon {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}

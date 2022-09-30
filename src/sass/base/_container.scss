@@ -1,0 +1,34 @@
+// breakpoints
+// 1. 320px
+// 2. 768px
+// 3. 1200px
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    // outline: 1px solid tomato;
+
+    // mini-mobile sreen from 320px
+    @include mq(mini-mobile) {
+        width: 320px;
+    }
+    
+    // mobile sreen from 480px
+    @include mq(mobile) {
+        width: 480px;
+    }
+
+    // tablet sreen from 768px
+    @include mq(tablet) {
+        width: 768px;
+    }
+
+    // desktop sreen from 1200px
+    @include mq(desktop) {
+        width: 1200px;
+    }
+}
