@@ -1,0 +1,2 @@
+const e=document.querySelector(".read-more-btn"),i=document.querySelector(".read-less-btn"),s=document.querySelector(".read-more-text");e.addEventListener("click",(function(){s.classList.toggle("invisible"),e.classList.toggle("invisible"),i.classList.toggle("invisible")})),i.addEventListener("click",(function(){s.classList.toggle("invisible"),e.classList.toggle("invisible"),i.classList.toggle("invisible")}));
+//# sourceMappingURL=index.8e4ed22b.js.map
