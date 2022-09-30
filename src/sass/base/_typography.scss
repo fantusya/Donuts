@@ -1,0 +1,8 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    @include fonts(400, 16px, 20px);
+
+    @include mq(desktop) {
+        @include fonts(400, 18px, 22px);
+    }
+}

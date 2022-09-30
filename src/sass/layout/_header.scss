@@ -1,44 +1,83 @@
-.header__container {
+.header {
+    background-image: url("/src/images/header/left-donats.png"), url("/src/images/header/bg.png");
+        background-repeat: no-repeat;
+            background-position: left top, top;
+            background-origin: padding-box;
+    // background-image: url("/src/images/header/bg.png");
+    //         background-repeat: no-repeat;
+    //             background-position: top;
+            // height: 1100px;
+            width: 100%;
+}
+
+.header-nav {
     display: flex;
     align-items: center;
-    max-width: 566px;
-    width: 100%
-
-    /* background-color: rgba(240, 255, 240, 0.5); */
+    padding: 8px 0px 0px 92px;
 }
 
-.header__logo {
-    @include fonts(400, 23px, 1.14, 0.03em);
-
-    @include mq(new-hero) {
-        @include fonts(400, 30px, 1.5, 0.04em);
-    }
-    font-family: Aboreto, cursive;
-
-    color: black;
+.header-nav--indent {
+    margin-bottom: 30px;
 }
 
-.header__button {
-    margin-left: auto;
-    
-    border: 1px solid transparent;
-    width: 35px;
-    height: 35px;
+.header-nav__logo-link--indent {
+    margin-right: 62px;
+}
 
-    @include mq(new-hero) {
-        width: 40px;
-        height: 40px;
-    }
+.burger-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 
-    color: black;
     background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.burger-btn--indent {
+    margin-left: auto;
+}
+
+.burger-btn__icon {
+    width: 30px;
+    height: 16px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.header__title {
+    font-family: 'Caveat Brush', cursive;
+    @include fonts(400, 30px, 38px);
+}
+
+.header__title--indent {
+    margin-bottom: 8px;
+}
+
+.header__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    @include fonts(500, 16px, 20px);
+}
+
+.header__subtitle--indent {
+    margin-bottom: 32px;
+}
+
+.header__link {
+    display: inline-block;
+    padding: 9px 47px;
+   
+    font-family: 'Caveat Brush', cursive;
+    @include fonts(400, 18px, 23px);
+    color: var(--button-text-cl);
+    background-color: var(--button-bg-cl);
+    border-radius: 25px;
 
     cursor: pointer;
 }
 
-.header__icon {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    fill: currentColor;
+.header__link--indent {
+    margin-bottom: 40px;
 }
