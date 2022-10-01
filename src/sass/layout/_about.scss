@@ -6,19 +6,8 @@
     margin-bottom: 15px;
 }
 
-.about__button {
-    padding: 0;
-    font-family: 'Caveat Brush', cursive;
-    @include fonts(400, 18px, 23px);
-    background-color: transparent;
-    color: var(--secondary-btn-text-cl);
-    border: 1px solid transparent;
-
-    cursor: pointer;
-}
-
-.read-more-btn.invisible,
-.read-less-btn.invisible,
-.read-more-text.invisible {
+.read-more-btn__about.invisible,
+.read-less-btn__about.invisible,
+.read-more-text__about.invisible {
     display: none;
 }

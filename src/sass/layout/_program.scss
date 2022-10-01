@@ -1,0 +1,96 @@
+.program__title--indent {
+    margin-bottom: 8px;
+}
+
+.program__first-text-block-paragrap--indent {
+    margin-bottom: 8px;
+}
+
+.program__text-block-list--indent {
+    margin-bottom: 8px;
+}
+
+.program__text-block-item--indent:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.program__text-block-paragraph::before {
+    content: '>';
+}
+
+.read-more-btn__program.invisible,
+.read-less-btn__program.invisible,
+.read-more-text__program.invisible {
+    display: none;
+}
+
+.read-more-btn__program--indent {
+    margin-bottom: 55px;
+}
+
+.read-less-btn__program--indent{
+    margin-bottom: 55px;
+}
+
+.event-info__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.event-info__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    
+    box-shadow: 0px 4px 4px 0px #AB816C40;
+    border-radius: 50%;
+
+    width: 130px;
+    height: 130px;
+
+    background-color: var(--event-bg-cl);
+    background-repeat: no-repeat;
+    background-position: left 50% bottom 10px;
+}
+
+.event-info__item:nth-child(1) {
+    background-image: url(/src/images/icons.svg/chef-hat-icon.svg);
+}
+
+.event-info__item:nth-child(2) {
+    background-image: url(/src/images/icons.svg/people-icon.svg);
+}
+
+.event-info__item:nth-child(3) {
+    background-image: url(/src/images/icons.svg/clock-icon.svg);
+}
+
+.event-info__item:nth-child(4) {
+    background-image: url(/src/images/icons.svg/chat-icon.svg);
+}
+
+.event-info__item:nth-child(even) {
+    margin-top: 36px;
+}
+
+.event-info__title {
+    font-family: 'Caveat Brush', cursive;
+    @include fonts(400, 18px, 23px);
+    color: var(--secondary-text-cl);
+}
+
+.event-info__text {
+    @include fonts(400, 14px, 17px);
+    color: var(--secondary-text-cl);
+}
+
+.event-info__img {
+    position: absolute;
+    top: -60%;
+    transform: translateY(50%);
+}
