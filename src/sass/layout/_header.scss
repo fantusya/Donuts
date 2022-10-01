@@ -1,13 +1,14 @@
 .header {
+    // background-color: #fef3e4;
     background-image: url("/src/images/header/left-donats.png"), url("/src/images/header/bg.png");
         background-repeat: no-repeat;
             background-position: left top, top;
             background-origin: padding-box;
+            background-size: auto, 100% 460px;
     // background-image: url("/src/images/header/bg.png");
     //         background-repeat: no-repeat;
     //             background-position: top;
-            // height: 1100px;
-            width: 100%;
+    // width: 100%;
 }
 
 .header-nav {
