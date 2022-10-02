@@ -1,3 +1,7 @@
+.program__section {
+    padding-bottom: 20px;
+}
+
 .program__title--indent {
     margin-bottom: 8px;
 }
@@ -36,6 +40,9 @@
     width: 280px;
     margin-left: auto;
     margin-right: auto;
+     @include mq(smt){
+        width: 460px;
+    }
 }
 
 .event-info__list {
@@ -43,6 +50,10 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+
+    @include mq(smt){
+        gap: 60px;
+    }
 }
 
 .event-info__item {

@@ -1,5 +1,6 @@
 @mixin mq($type) {
     $mobile: 320px;
+    $smt: 500px;
     $tablet: 768px;
     $desktop: 1280px;
 
@@ -16,6 +17,12 @@
 
     @if $type =='mobile' {
         @media screen and (min-width: $mobile) {
+            @content;
+        }
+    }
+
+    @if $type =='smt' {
+        @media screen and (min-width: $smt) {
             @content;
         }
     }

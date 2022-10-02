@@ -1,0 +1,34 @@
+body.show-menu .backdrop {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+}
+
+body.show-menu .menu {
+    transform: translateX(0%);
+}
+
+.backdrop {
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #FEF3E4E5;
+        z-index: 999;
+        padding-top: 25px;
+
+    transform: translateX(100%);
+    transition: transform 200ms ease-in-out;
+}

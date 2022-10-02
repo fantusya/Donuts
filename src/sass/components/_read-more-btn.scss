@@ -3,7 +3,7 @@
     font-family: 'Caveat Brush', cursive;
     @include fonts(400, 18px, 23px);
     background-color: transparent;
-    color: var(--secondary-btn-text-cl);
+    color: var(--button-bg-cl);
     border: 1px solid transparent;
 
     cursor: pointer;

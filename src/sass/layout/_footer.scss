@@ -1,0 +1,33 @@
+.footer__section {
+    padding-bottom: 20px;
+
+    background-image: url("/src/images/footer/wheat-flour.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-origin: padding-box;
+}
+
+.footer__socials-list--indent {
+    margin-bottom: 32px;
+}
+
+.footer__contacts-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contacts-link {
+    display: flex;
+    align-items: center;
+
+    color: inherit;
+}
+
+.footer__contacts-svg {
+    width: 13px;
+    height: 13px;
+
+    &--indent {
+        margin-right: 4px;
+    }
+}

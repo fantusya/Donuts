@@ -1,0 +1,16 @@
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.menu__link {
+    @include fonts(500, 24px, 30px);
+    color: inherit;
+
+    &:hover,
+    &:focus {
+        color: var(--hover-text-cl);
+    }
+}

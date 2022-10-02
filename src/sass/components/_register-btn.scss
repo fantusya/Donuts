@@ -1,0 +1,18 @@
+.register-btn {
+    display: inline-block;
+    padding: 9px 47px;
+    min-width: 145px;
+   
+    font-family: 'Caveat Brush', cursive;
+    @include fonts(400, 18px, 23px);
+    color: var(--button-text-cl);
+    background-color: var(--button-bg-cl);
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: var(--btn-hover-bg-cl);
+    }
+}

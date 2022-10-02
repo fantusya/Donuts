@@ -14,13 +14,34 @@
       href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./sass/index.scss" />
 
     <script type="module" src="./index.js"></script>
+    <style>
+      .mega-wrapper {
+        /* position: absolute; */
+        background-image: url('./images/reviews/reviews-bg.png');
+        background-repeat: no-repeat;
+        background-size: 100% 1337px;
+      }
+    </style>
   </head>
   <body>
     <include src="./partials/header.html"></include>
+    <include src="./partials/menu.html"></include>
     <include src="./partials/about.html"></include>
     <include src="./partials/program.html"></include>
+    <div class="mega-wrapper">
+      <include src="./partials/reviews.html"></include>
+      <include src="./partials/registration.html"></include>
+      <include src="./partials/contacts.html"></include>
+    </div>
+    <include src="./partials/footer.html"></include>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>

@@ -1,3 +1,7 @@
+.header__section {
+    padding-bottom: 16px;
+}
+
 .header {
     // background-color: #fef3e4;
     background-image: url("/src/images/header/left-donats.png"), url("/src/images/header/bg.png");
@@ -14,7 +18,7 @@
 .header-nav {
     display: flex;
     align-items: center;
-    padding: 8px 0px 0px 92px;
+    padding-top: 8px;
 }
 
 .header-nav--indent {
@@ -22,26 +26,9 @@
 }
 
 .header-nav__logo-link--indent {
-    margin-right: 62px;
-}
-
-.burger-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-
-    background-color: transparent;
-    border: 1px solid transparent;
-}
-
-.burger-btn--indent {
+    // margin-right: 62px;
+    margin-right: auto;
     margin-left: auto;
-}
-
-.burger-btn__icon {
-    width: 30px;
-    height: 16px;
 }
 
 .hero {
@@ -66,19 +53,7 @@
     margin-bottom: 32px;
 }
 
-.header__link {
-    display: inline-block;
-    padding: 9px 47px;
-   
-    font-family: 'Caveat Brush', cursive;
-    @include fonts(400, 18px, 23px);
-    color: var(--button-text-cl);
-    background-color: var(--button-bg-cl);
-    border-radius: 25px;
-
-    cursor: pointer;
-}
-
 .header__link--indent {
     margin-bottom: 40px;
 }
+

@@ -1,0 +1,51 @@
+.registration__section {
+    padding-bottom: 32px;
+    // position: relative;
+    // overflow: visible;
+}
+
+.registration__wrapper {
+    background-color: var(--main-bg-cl);
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-radius: 150px 150px 0px 0px;
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+}
+
+.registration__title--indent {
+    margin-bottom: 20px;
+}
+
+.registration__timetable {
+    @include fonts(500, 18px, 22px);
+
+    &--indent {
+        margin-bottom: 20px;
+    }
+}
+
+.registration__price {
+    @include fonts(500, 18px, 22px);
+
+    &--indent {
+        margin-bottom: 10px;
+    }
+}
+
+.registration__info::after {
+    content: '';
+    margin-bottom: 8px;
+    display: inline-block;
+    width: 264px;
+    height: 1px;
+    background-color:var(--decoration-text-cl);
+}
+
+// .registration__form-group {
+//     padding-top: 25px;
+// }
+
+.submit-btn {
+    border: 1px solid transparent;
+}

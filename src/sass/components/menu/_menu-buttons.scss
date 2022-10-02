@@ -1,0 +1,25 @@
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.menu-btn--close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.burger-btn__icon {
+    width: 30px;
+    height: 16px;
+}
+
+.close__icon {
+    width: 18px;
+    height: 18px;
+}

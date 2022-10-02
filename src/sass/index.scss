@@ -1,5 +1,3 @@
-// @import './common';
-// @import './example';
 @import 
 'abstracts/variables',
 'abstracts/mixins';
@@ -8,14 +6,24 @@
 'base/base',
 'base/typography',
 'base/reset',
+'base/section',
 'base/container';
 
 @import 
 'layout/header',
 'layout/about',
-'layout/program';
+'layout/program',
+'layout/reviews',
+'layout/registration',
+'layout/contacts',
+'layout/footer';
 
-@import 
+@import
+'components/menu/menu-backdrop',
+'components/menu/menu-buttons',
+'components/menu/menu-styles',
+'components/register-btn', 
 'components/socials-list',
 'components/titles',
-'components/read-more-btn.scss';
+'components/read-more-btn.scss',
+'components/form';

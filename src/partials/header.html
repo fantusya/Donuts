@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header header__section">
   <div class="container header__container">
     <nav class="header-nav header-nav--indent">
       <a
@@ -6,12 +6,13 @@
         href=""
       >
         <img
+          width="96px"
           class="header-nav__logo-img"
           src="images/header/logo.png"
           alt="logo"
         />
       </a>
-      <button class="burger-btn burger-btn--indent" type="button">
+      <button class="menu-btn" type="button" data-action="open-menu">
         <svg class="burger-btn__icon">
           <use href="images/icons.svg/symbol-defs.svg#burger-menu-icon"></use>
         </svg>
@@ -25,7 +26,11 @@
       <p class="header__subtitle header__subtitle--indent">
         Hosted by Eva Green
       </p>
-      <a class="header__link header__link--indent link" href="">Register</a>
+      <a
+        class="header__link header__link--indent link register-btn"
+        href="#registration"
+        >Register</a
+      >
       <ul class="socials-list list">
         <li class="socials-list__item">
           <a class="socials-list__link link" href="">
