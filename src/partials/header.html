@@ -8,17 +8,35 @@
         <img
           width="96px"
           class="header-nav__logo-img"
-          src="images/header/logo.png"
+          src="images/header/logo/logo_sm.png"
           alt="logo"
         />
       </a>
-      <button class="menu-btn" type="button" data-action="open-menu">
+      <ul class="desktop-header__list desktop-header__list--indent list">
+        <li class="desktop-header__item">
+          <a class="desktop-header__link link" href="#about">About us</a>
+        </li>
+        <li class="desktop-header__item">
+          <a class="desktop-header__link link" href="#program">Program</a>
+        </li>
+        <li class="desktop-header__item">
+          <a class="desktop-header__link link" href="#reviews">Reviews</a>
+        </li>
+        <li class="desktop-header__item">
+          <a class="desktop-header__link link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+      <button
+        class="menu-btn menu-btn--open"
+        type="button"
+        data-action="open-menu"
+      >
         <svg class="burger-btn__icon">
           <use href="images/icons.svg/symbol-defs.svg#burger-menu-icon"></use>
         </svg>
       </button>
     </nav>
-    <div class="hero">
+    <div class="hero__block">
       <h1 class="header__title header__title--indent">
         Donut Masterclass <br />
         with the Donut King
@@ -31,7 +49,7 @@
         href="#registration"
         >Register</a
       >
-      <ul class="socials-list list">
+      <ul class="socials-list socials-list--header list">
         <li class="socials-list__item">
           <a class="socials-list__link link" href="">
             <svg class="socials-list__icon">
@@ -54,10 +72,6 @@
           </a>
         </li>
       </ul>
-      <img
-        src="images/header/donut-box.png"
-        alt="donut box with a cup of coffee"
-      />
     </div>
   </div>
 </header>

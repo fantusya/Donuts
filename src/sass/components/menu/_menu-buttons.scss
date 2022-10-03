@@ -4,22 +4,41 @@
     justify-content: center;
     padding: 0;
 
-    background-color: transparent;
+    background-color: var(--event-bg-cl);
     border: 1px solid transparent;
-}
+    cursor: pointer;
 
-.menu-btn--close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    &--open {
+        padding: 10px;
+        border-radius: 30%;
+    }
+
+    &--close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    transition: color var(--transition-duration) var(--transition-timing-function);
+
+    @include mq(desktop){
+        display: none;
+    }
+
+    &:hover,
+    &:focus {
+        color: var(--btn-hover-bg-cl);
+    }
 }
 
 .burger-btn__icon {
+    fill: currentColor;
     width: 30px;
     height: 16px;
 }
 
 .close__icon {
+    fill: currentColor;
     width: 18px;
     height: 18px;
 }

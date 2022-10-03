@@ -1,0 +1,31 @@
+.header-about__wrapper {
+    background-image: url('/src/images/header/background-layout/background_sm.png');
+    background-repeat: no-repeat;
+    background-size: 100% 461px;
+
+    @include mq(tablet){
+        background-image: url('/src/images/header/background-layout/background_md.png');
+        background-size: 100% 622px;
+    }
+
+    @include mq(desktop){
+        background-image: url('/src/images/header/background-layout/background_lg.png');
+        background-size: 100% 1036px;
+    }
+}
+
+.reviews-registration-contacts__wrapper {
+    background-image: url('/src/images/reviews/background-layout/background_sm.png');
+    background-repeat: no-repeat;
+    background-size: 100% 1337px;
+
+    @include mq(tablet){
+        background-image: url('/src/images/reviews/background-layout/background_md.png');
+        background-size: 100% 1512px;
+    }
+
+    @include mq(desktop){
+        background-image: url('/src/images/reviews/background-layout/background_lg.png');
+        background-size: 100% 1861px;
+    }
+}

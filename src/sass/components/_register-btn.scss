@@ -11,6 +11,13 @@
 
     cursor: pointer;
 
+    transition: background-color var(--transition-duration) var(--transition-timing-function);
+
+    @include mq(desktop) {
+        min-width: 158px;
+        @include fonts(400, 24px, 30px);
+    }
+
     &:hover,
     &:focus {
         background-color: var(--btn-hover-bg-cl);

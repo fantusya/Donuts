@@ -1,8 +1,10 @@
 @mixin mq($type) {
     $mobile: 320px;
-    $smt: 500px;
     $tablet: 768px;
     $desktop: 1280px;
+    
+    $event-section: 500px;
+    $registration-section: 1075px;
 
     // @if $type =='mobile-fixed' {
     //     @media screen and (min-width: 480px) and (max-width: 767.98px) {
@@ -21,8 +23,14 @@
         }
     }
 
-    @if $type =='smt' {
-        @media screen and (min-width: $smt) {
+    @if $type =='event-section' {
+        @media screen and (min-width: $event-section) {
+            @content;
+        }
+    }
+
+    @if $type =='registration-section' {
+        @media screen and (min-width: $registration-section) {
             @content;
         }
     }

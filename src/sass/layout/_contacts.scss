@@ -8,8 +8,16 @@
 
 .contacts__title--indent {
     margin-bottom: 16px;
+
+    @include mq(tablet) {
+        margin-bottom: 20px;
+    }
 }
 
 .contacts__subtitle--indent {
     margin-bottom: 10px;
+}
+
+.contacts__form-input {
+    width: 336px;
 }

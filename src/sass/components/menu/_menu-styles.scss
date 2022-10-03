@@ -3,14 +3,22 @@
     flex-direction: column;
     align-items: center;
     gap: 45px;
+    border-radius: 50%;
 }
 
 .menu__link {
+    padding: 8px;
     @include fonts(500, 24px, 30px);
     color: inherit;
+    background-color: transparent;
+    border-radius: 30%;
+
+    transition: color var(--transition-duration) var(--transition-timing-function), 
+    background-color var(--transition-duration) var(--transition-timing-function);
 
     &:hover,
     &:focus {
-        color: var(--hover-text-cl);
+        color: var(--event-bg-cl);
+        background-color: var(--btn-hover-bg-cl);
     }
 }

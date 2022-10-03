@@ -21,21 +21,15 @@
     <link rel="stylesheet" href="./sass/index.scss" />
 
     <script type="module" src="./index.js"></script>
-    <style>
-      .mega-wrapper {
-        /* position: absolute; */
-        background-image: url('./images/reviews/reviews-bg.png');
-        background-repeat: no-repeat;
-        background-size: 100% 1337px;
-      }
-    </style>
   </head>
   <body>
-    <include src="./partials/header.html"></include>
+    <div class="header-about__wrapper">
+      <include src="./partials/header.html"></include>
+      <include src="./partials/about.html"></include>
+    </div>
     <include src="./partials/menu.html"></include>
-    <include src="./partials/about.html"></include>
     <include src="./partials/program.html"></include>
-    <div class="mega-wrapper">
+    <div class="reviews-registration-contacts__wrapper">
       <include src="./partials/reviews.html"></include>
       <include src="./partials/registration.html"></include>
       <include src="./partials/contacts.html"></include>

@@ -1,17 +1,38 @@
 .program__section {
     padding-bottom: 20px;
+
+    @include mq(tablet){
+        padding-bottom: 50px;
+    }
+}
+
+.program__container {
+    @include mq(tablet){
+        display: flex;
+        gap: 32px;
+    }
 }
 
 .program__title--indent {
     margin-bottom: 8px;
 }
 
-.program__first-text-block-paragrap--indent {
-    margin-bottom: 8px;
+.program__first-text-block-paragraph {
+    @include mq(tablet) {
+        max-width: 330px;
+    }
+
+    &--indent {
+        margin-bottom: 8px;
+    }
 }
 
 .program__text-block-list--indent {
     margin-bottom: 8px;
+
+    @include mq(tablet){
+        margin-bottom: 16px;
+    }
 }
 
 .program__text-block-item--indent:not(:last-child) {
@@ -40,8 +61,13 @@
     width: 280px;
     margin-left: auto;
     margin-right: auto;
-     @include mq(smt){
+
+    @include mq(event-section){
         width: 460px;
+    }
+
+    @include mq(tablet) {
+        width: 336px;
     }
 }
 
@@ -51,8 +77,12 @@
     flex-wrap: wrap;
     gap: 20px;
 
-    @include mq(smt){
+    @include mq(event-section) {
         gap: 60px;
+    }
+
+    @include mq(tablet){
+        gap: 29px;
     }
 }
 
@@ -73,6 +103,11 @@
     background-color: var(--event-bg-cl);
     background-repeat: no-repeat;
     background-position: left 50% bottom 10px;
+
+    @include mq(tablet){
+        width: 152px;
+        height: 152px;
+    }
 }
 
 .event-info__item:nth-child(1) {

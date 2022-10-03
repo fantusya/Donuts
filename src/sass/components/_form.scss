@@ -1,3 +1,11 @@
+.registration-form__form {
+    @include mq(tablet) {
+        display: flex;
+        align-items: center;
+        gap: 54px;
+    }
+}
+
 .form-wrapper {
     display: flex;
     flex-direction: column;
@@ -14,7 +22,6 @@
 }
 
 .form-input {
-    width: 264px;
     padding: 3px;
     color: var(--main-text-cl);
     background-color: transparent;
@@ -24,8 +31,36 @@
 
     transition: border-color 400ms ease;
 
+    @include mq(tablet) {
+        width: 237px;
+    }
+
     &:focus {
         border-color: var(--main-text-cl);
+    }
+}
+
+.form-input.registration__form-input {
+    width: 264px;
+
+    @include mq(tablet) {
+        width: 237px;
+    }
+
+    @include mq(desktop) {
+        width: 238px;
+    }
+}
+
+.form-input.contacts__form-input {
+    width: 280px;
+
+    @include mq(tablet) {
+        width: 336px;
+    }
+
+    @include mq(desktop) {
+        width: 394px;
     }
 }
 

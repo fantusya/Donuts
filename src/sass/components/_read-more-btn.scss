@@ -7,4 +7,12 @@
     border: 1px solid transparent;
 
     cursor: pointer;
+
+    transition: color var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--btn-hover-bg-cl);
+        text-decoration: underline;
+    }
 }
