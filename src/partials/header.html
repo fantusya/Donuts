@@ -5,12 +5,66 @@
         class="header-nav__logo-link header-nav__logo-link--indent link"
         href=""
       >
-        <img
-          width="96px"
-          class="header-nav__logo-img"
-          src="images/header/logo/logo_sm.png"
-          alt="logo"
-        />
+        <picture>
+          <!-- Set of images for desktop screens -->
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              images/header/logo/logo_lg.webp    1x,
+              images/header/logo/logo_lg@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="
+              images/header/logo/logo_lg.png    1x,
+              images/header/logo/logo_lg@2x.png 2x
+            "
+            type="image/png"
+          />
+          <!-- Set of images for tablet screens -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              images/header/logo/logo_md.webp    1x,
+              images/header/logo/logo_md@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              images/header/logo/logo_md.png    1x,
+              images/header/logo/logo_md@2x.png 2x
+            "
+            type="image/png"
+          />
+          <!-- Set of images for mobile screens -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              images/header/logo/logo_sm.webp    1x,
+              images/header/logo/logo_sm@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              images/header/logo/logo_sm.png    1x,
+              images/header/logo/logo_sm@2x.png 2x
+            "
+            type="image/png"
+          />
+          <!-- Default image -->
+          <img
+            class="header-nav__logo-img"
+            src="images/header/logo/logo_sm.png"
+            alt="logotype"
+            loading="lazy"
+          />
+        </picture>
       </a>
       <ul class="desktop-header__list desktop-header__list--indent list">
         <li class="desktop-header__item">

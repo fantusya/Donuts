@@ -1,10 +1,54 @@
 .footer__section {
     padding-bottom: 20px;
-
+    /**
+    |============================
+    | background image for mobile version
+    |============================
+    */
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-origin: padding-box;
+    
     background-image: url("/src/images/footer/wheat-flour_sm.png");
-        background-repeat: no-repeat;
-        background-position: right bottom;
-        background-origin: padding-box;
+    background-image: -webkit-image-set(url("/src/images/footer/wheat-flour_sm.webp") 1x);
+    
+    //retinized 2x background image
+    @include mq(retina) {
+        background-image: url("/src/images/footer/wheat-flour_sm@2x.png");
+        background-image: -webkit-image-set(url("/src/images/footer/wheat-flour_sm@2x.webp") 2x);
+    }
+    
+    /**
+    |============================
+    | background image for tablet version
+    |============================
+    */
+    @include mq(tablet) {
+        background-image: url("/src/images/footer/wheat-flour_md.png");
+        background-image: -webkit-image-set(url("/src/images/footer/wheat-flour_md.webp") 1x);
+    
+        // retinized 2x background image
+        @include mq(retina) {
+            background-image: url("/src/images/footer/wheat-flour_md@2x.png");       
+        }
+        background-image: -webkit-image-set(url("/src/images/footer/wheat-flour_md@2x.webp") 2x);
+    }
+    
+    /**
+    |============================
+    | background image for desctop version
+    |============================
+    */
+    @include mq(desktop) {
+        background-image: url("/src/images/footer/wheat-flour_lg.png");
+        background-image: -webkit-image-set(url("/src/images/footer/wheat-flour_lg.webp") 1x);
+    
+        // background image for tablet version
+        @include mq(retina) {
+            background-image: url("/src/images/footer/wheat-flour_lg@2x.png");    
+        }
+        background-image: -webkit-image-set(url("/src/images/footer/wheat-flour_lg@2x.webp") 2x);
+    }
 }
 
 .footer__socials-list--indent {

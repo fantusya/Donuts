@@ -1,10 +1,47 @@
 <section class="about__section" id="about">
   <div class="container about__container">
-    <img
-      class="about__img about__img--indent"
-      src="images/about/box_sm.png"
-      alt="donut box with a cup of coffee"
-    />
+    <picture>
+      <!-- Set of images for desktop screens -->
+      <source
+        media="(min-width: 1280px)"
+        srcset="images/about/box_lg.webp 1x, images/about/box_lg@2x.webp 2x"
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 1280px)"
+        srcset="images/about/box_lg.png 1x, images/about/box_lg@2x.png 2x"
+        type="image/png"
+      />
+      <!-- Set of images for tablet screens -->
+      <source
+        media="(min-width: 768px)"
+        srcset="images/about/box_md.webp 1x, images/about/box_md@2x.webp 2x"
+        type="image/webp"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="images/about/box_md.png 1x, images/about/box_md@2x.png 2x"
+        type="image/png"
+      />
+      <!-- Set of images for mobile screens -->
+      <source
+        media="(max-width: 767px)"
+        srcset="images/about/box_sm.webp 1x, images/about/box_sm@2x.webp 2x"
+        type="image/webp"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="images/about/box_sm.png 1x, images/about/box_sm@2x.png 2x"
+        type="image/png"
+      />
+      <!-- Default image -->
+      <img
+        class="about__img about__img--indent"
+        src="images/about/box_sm.png"
+        alt="a box with donuts and a cup of coffee"
+        loading="lazy"
+      />
+    </picture>
     <div class="about-text__container">
       <h2 class="about__title about__title--indent section-title">About us</h2>
       <p class="about__text about__text--indent">

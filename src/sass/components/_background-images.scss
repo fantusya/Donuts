@@ -1,31 +1,105 @@
 .header-about__wrapper {
-    background-image: url('/src/images/header/background-layout/background_sm.png');
+    /**
+    |============================
+    | background image for mobile version
+    |============================
+    */
     background-repeat: no-repeat;
+
     background-size: 100% 461px;
-
-    @include mq(tablet){
-        background-image: url('/src/images/header/background-layout/background_md.png');
-        background-size: 100% 622px;
+    background-image: url("/src/images/header/background-layout/background_sm.png");
+    background-image: -webkit-image-set(url("/src/images/header/background-layout/background_sm.webp") 1x);
+    
+    //retinized 2x background image
+    @include mq(retina) {
+        background-image: url("/src/images/header/background-layout/background_sm@2x.png");
+        background-image: -webkit-image-set(url("/src/images/header/background-layout/background_sm@2x.webp") 2x);
     }
-
-    @include mq(desktop){
-        background-image: url('/src/images/header/background-layout/background_lg.png');
+    
+    /**
+    |============================
+    | background image for tablet version
+    |============================
+    */
+    @include mq(tablet) {
+        background-size: 100% 622px;
+        background-image: url("/src/images/header/background-layout/background_md.png");
+        background-image: -webkit-image-set(url("/src/images/header/background-layout/background_md.webp") 1x);
+    
+        // retinized 2x background image
+        @include mq(retina) {
+            background-image: url("/src/images/header/background-layout/background_md@2x.png");
+        }
+        background-image: -webkit-image-set(url("/src/images/header/background-layout/background_md@2x.webp") 2x);
+    }
+    
+    /**
+    |============================
+    | background image for desctop version
+    |============================
+    */
+    @include mq(desktop) {
         background-size: 100% 1036px;
+        background-image: url("/src/images/header/background-layout/background_lg.png");
+        background-image: -webkit-image-set(url("/src/images/header/background-layout/background_lg.webp") 1x);
+    
+        // retinized 2x background image
+        @include mq(retina) {
+            background-image: url("/src/images/header/background-layout/background_lg@2x.png");
+        }
+        background-image: -webkit-image-set(url("/src/images/header/background-layout/background_lg@2x.webp") 2x);
     }
 }
 
 .reviews-registration-contacts__wrapper {
-    background-image: url('/src/images/reviews/background-layout/background_sm.png');
+    /**
+    |============================
+    | background image for mobile version
+    |============================
+    */
     background-repeat: no-repeat;
+    
     background-size: 100% 1337px;
-
-    @include mq(tablet){
-        background-image: url('/src/images/reviews/background-layout/background_md.png');
+    background-image: url('/src/images/reviews/background-layout/background_sm.png');
+    background-image: -webkit-image-set(url('/src/images/reviews/background-layout/background_sm.webp') 1x);
+    
+    //retinized 2x background image
+    @include mq(retina) {
+        background-image: url("/src/images/reviews/background-layout/background_sm@2x.png");
+        background-image: -webkit-image-set(url("/src/images/reviews/background-layout/background_sm@2x.webp") 2x);
+    }
+    
+    /**
+    |============================
+    | background image for tablet version
+    |============================
+    */
+    @include mq(tablet) {
         background-size: 100% 1512px;
+        background-image: url("/src/images/reviews/background-layout/background_md.png");
+        background-image: -webkit-image-set(url("/src/images/reviews/background-layout/background_md.webp") 1x);
+    
+        // retinized 2x background image
+        @include mq(retina) {
+            background-image: url("/src/images/reviews/background-layout/background_md@2x.png");
+        }
+        background-image: -webkit-image-set(url("/src/images/reviews/background-layout/background_md@2x.webp") 2x);
     }
-
-    @include mq(desktop){
-        background-image: url('/src/images/reviews/background-layout/background_lg.png');
+    
+    /**
+    |============================
+    | background image for desctop version
+    |============================
+    */
+    @include mq(desktop) {
         background-size: 100% 1861px;
-    }
+        background-image: url("/src/images/reviews/background-layout/background_lg.png");
+        background-image: -webkit-image-set(url("/src/images/reviews/background-layout/background_lg.webp") 1x);
+    
+        // retinized 2x background image
+        @include mq(retina) {
+            background-image: url("/src/images/reviews/background-layout/background_lg@2x.png");
+        }
+        background-image: -webkit-image-set(url("/src/images/reviews/background-layout/background_lg@2x.webp") 2x);
+    } 
 }

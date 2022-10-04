@@ -9,22 +9,57 @@
 }
 
 .header {
-    background-image: url("/src/images/header/corner-donuts/hed-don_sm.png");
+    /**
+    |============================
+    | background image for mobile version
+    |============================
+    */
     background-repeat: no-repeat;
     background-position: left top;
     background-origin: padding-box;
     background-size: auto;
 
-    @include mq(tablet){
-        background-image: url("/src/images/header/corner-donuts/hed-don_md.png");
-        background-repeat: no-repeat;
-        background-position: top right 100px;
+    background-image: url("/src/images/header/corner-donuts/hed-don_sm.png");
+    background-image: -webkit-image-set(url("/src/images/header/corner-donuts/hed-don_sm.webp") 1x);
+    
+    //retinized 2x background image
+    @include mq(retina) {
+        background-image: url("/src/images/header/corner-donuts/hed-don_sm@2x.png");
+        background-image: -webkit-image-set(url("/src/images/header/corner-donuts/hed-don_sm@2x.webp") 2x);
     }
-
-    @include mq(desktop){
-        background-image: url("/src/images/header/corner-donuts/hed-don_lg.png");
-        background-repeat: no-repeat;
+    
+    /**
+    |============================
+    | background image for tablet version
+    |============================
+    */
+    @include mq(tablet) {
+        background-position: top right 100px;
+        background-image: url("/src/images/header/corner-donuts/hed-don_md.png");
+        background-image: -webkit-image-set(url("/src/images/header/corner-donuts/hed-don_md.webp") 1x);
+    
+        // retinized 2x background image
+        @include mq(retina) {
+            background-image: url("/src/images/header/corner-donuts/hed-don_md@2x.png");
+        }
+        background-image: -webkit-image-set(url("/src/images/header/corner-donuts/hed-don_md@2x.webp") 2x);
+    }
+    
+    /**
+    |============================
+    | background image for desctop version
+    |============================
+    */
+    @include mq(desktop) {
         background-position: top right;
+        background-image: url("/src/images/header/corner-donuts/hed-don_lg.png");
+        background-image: -webkit-image-set(url("/src/images/header/corner-donuts/hed-don_lg.webp") 1x);
+    
+        // retinized 2x background image
+        @include mq(retina) {
+            background-image: url("/src/images/header/corner-donuts/hed-don_lg@2x.png");
+        }
+        background-image: -webkit-image-set(url("/src/images/header/corner-donuts/hed-don_lg@2x.webp") 2x);
     }
 }
 
