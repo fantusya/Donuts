@@ -1,7 +1,19 @@
 .registration__section {
-    padding-bottom: 32px;
+    @include mq(mobile-only) {
+        padding-bottom: 32px;
+    }
 
-    @include mq(tablet){
+    @include mq(tablet-only) {
+        padding-bottom: 78px;
+    }
+
+    // @include mq(desktop) {
+    //     padding-bottom: 160px;
+    // }
+}
+
+.registration__container {
+    @include mq(tablet-only) {
         padding-bottom: 78px;
         /**
         |============================
@@ -10,63 +22,59 @@
         */
         background-repeat: no-repeat;
         background-position: left -9%, 100% 180%;
-
+        background-origin: padding-box;
+    
         background-image: url("/src/images/registration/donut/don_md.png"), url('/src/images/registration/confetti/confetti_md.png');
-        background-image: -webkit-image-set(url("/src/images/registration/donut/don_md.webp") 1x), -webkit-image-set(url("/src/images/registration/confetti/confetti_md.webp") 1x);
+        // background-image: -webkit-image-set(url("/src/images/registration/donut/don_md.webp") 1x), -webkit-image-set(url("/src/images/registration/confetti/confetti_md.webp") 1x);
     
         // retinized 2x background image
-        @include mq(retina) {
-            background-image: url("/src/images/registration/donut/don_md@2x.png"), url('/src/images/registration/confetti/confetti_md@2x.png');
+            @include mq(retina) {
+                background-image: url("/src/images/registration/donut/don_md@2x.png"), url('/src/images/registration/confetti/confetti_md@2x.png');
+            }
         }
-        background-image: -webkit-image-set(url("/src/images/registration/donut/don_md@2x.webp") 2x), -webkit-image-set(url("/src/images/registration/confetti/confetti_md@2x.webp") 2x);
-    
+            // background-image: -webkit-image-set(url("/src/images/registration/donut/don_md@2x.webp") 2x), -webkit-image-set(url("/src/images/registration/confetti/confetti_md@2x.webp") 2x);
+   
+     @include mq(desktop) {
+        padding-bottom: 160px;
         /**
         |============================
         | background image for desctop version
         |============================
         */
-        @include mq(desktop) {
-            background-image: url("/src/images/registration/donut/don_lg.png"), url('/src/images/registration/confetti/confetti_lg.png');
-            background-image: -webkit-image-set(url("/src/images/registration/donut/don_lg.webp") 1x),
-                -webkit-image-set(url("/src/images/registration/confetti/confetti_lg.webp") 1x);
+        background-repeat: no-repeat;
+        background-position: 10% 0, 100% -400%;
+        background-image: url("/src/images/registration/donut/don_lg.png"), url('/src/images/registration/confetti/confetti_lg.png');
+            // background-image: -webkit-image-set(url("/src/images/registration/donut/don_lg.webp") 1x),
+            //     -webkit-image-set(url("/src/images/registration/confetti/confetti_lg.webp") 1x);
         
-            // retinized 2x background image
-            @include mq(retina) {
-                background-image: url("/src/images/registration/donut/don_lg@2x.png"),
-                    url('/src/images/registration/confetti/confetti_lg@2x.png');
-            }
-            background-image: -webkit-image-set(url("/src/images/registration/donut/don_lg@2x.webp") 2x),
-            -webkit-image-set(url("/src/images/registration/confetti/confetti_lg@2x.webp") 2x);
+        // retinized 2x background image
+        @include mq(retina) {
+            background-image: url("/src/images/registration/donut/don_lg@2x.png"), url('/src/images/registration/confetti/confetti_lg@2x.png');
         }
+            // background-image: -webkit-image-set(url("/src/images/registration/donut/don_lg@2x.webp") 2x),
+            // -webkit-image-set(url("/src/images/registration/confetti/confetti_lg@2x.webp") 2x);
     }
-
-    @include mq(registration-section){
-        background-position: 7% top, 95% 180%;
-    }
-    // background-size: 100% 461px;
-}
-
-.registration__container {
-    // background-image: url('/src/images/registration/donut/tablet-donut.png'), url('/src/images/registration/confetti/tablet-confetti.png');
-    //     background-repeat: no-repeat;
-    //     background-position: left top, 100% 180%;
-    max-width: 1280px;
-    width: 100%;
 }
 
 .registration__wrapper {
     margin-right: auto;
     margin-left: auto;
-    max-width: 822px;
-    width: 100%;
+   
     background-color: var(--main-bg-cl);
     text-align: center;
     padding-top: 32px;
     padding-bottom: 32px;
     border-radius: 150px 150px 0px 0px;
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+    
+    @include mq(mobile-only) {
+        max-width: 450px;
+        width: 100%;
+    }
 
     @include mq(tablet){
+        max-width: 822px;
+            width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -93,6 +101,10 @@
 
     &--indent {
         margin-bottom: 30px;
+
+        @include mq(desktop){
+            margin-bottom: 16px;
+        }
     }
 }
 

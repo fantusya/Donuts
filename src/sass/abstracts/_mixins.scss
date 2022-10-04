@@ -4,7 +4,6 @@
     $desktop: 1280px;
     
     $event-section: 500px;
-    $registration-section: 1075px;
 
     // @if $type =='mobile-fixed' {
     //     @media screen and (min-width: 480px) and (max-width: 767.98px) {
@@ -23,17 +22,6 @@
         }
     }
 
-    @if $type =='event-section' {
-        @media screen and (min-width: $event-section) {
-            @content;
-        }
-    }
-
-    @if $type =='registration-section' {
-        @media screen and (min-width: $registration-section) {
-            @content;
-        }
-    }
 
     @if $type =='tablet-only' {
         @media screen and (min-width: $tablet) and (max-width: #{$desktop - 0.02}) {
@@ -59,8 +47,16 @@
         }
     }
 
+    @if $type =='event-section' {
+        @media screen and (min-width: $event-section) and (max-width: #{$tablet - 0.02}) {
+            @content;
+        }
+    }
+
    @if $type =='retina' {
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+       @media (min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
            @content;
        }
    }

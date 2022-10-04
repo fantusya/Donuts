@@ -7,13 +7,14 @@
     background-repeat: no-repeat;
 
     background-size: 100% 461px;
+    // background-image: -webkit-image-set(url("/src/images/header/background-layout/background_sm.webp") 1x);
     background-image: url("/src/images/header/background-layout/background_sm.png");
-    background-image: -webkit-image-set(url("/src/images/header/background-layout/background_sm.webp") 1x);
+    // background-image: -webkit-image-set(url("/src/images/header/background-layout/background_sm.webp") 1x);
     
     //retinized 2x background image
     @include mq(retina) {
         background-image: url("/src/images/header/background-layout/background_sm@2x.png");
-        background-image: -webkit-image-set(url("/src/images/header/background-layout/background_sm@2x.webp") 2x);
+        // background-image: -webkit-image-set(url("/src/images/header/background-layout/background_sm@2x.webp") 2x);
     }
     
     /**
@@ -24,13 +25,13 @@
     @include mq(tablet) {
         background-size: 100% 622px;
         background-image: url("/src/images/header/background-layout/background_md.png");
-        background-image: -webkit-image-set(url("/src/images/header/background-layout/background_md.webp") 1x);
+        // background-image: -webkit-image-set(url("/src/images/header/background-layout/background_md.webp") 1x);
     
         // retinized 2x background image
         @include mq(retina) {
             background-image: url("/src/images/header/background-layout/background_md@2x.png");
         }
-        background-image: -webkit-image-set(url("/src/images/header/background-layout/background_md@2x.webp") 2x);
+        // background-image: -webkit-image-set(url("/src/images/header/background-layout/background_md@2x.webp") 2x);
     }
     
     /**
@@ -39,15 +40,16 @@
     |============================
     */
     @include mq(desktop) {
-        background-size: 100% 1036px;
-        background-image: url("/src/images/header/background-layout/background_lg.png");
-        background-image: -webkit-image-set(url("/src/images/header/background-layout/background_lg.webp") 1x);
+        background-size: auto, auto, 100% 1036px;
+        background-position: left 65%, top right, top;
+        background-image: url("/src/images/header/spoon/spoon_lg.png"), url("/src/images/header/corner-donuts/hed-don_lg.png"), url("/src/images/header/background-layout/background_lg.png");
+        // background-image: -webkit-image-set(url("/src/images/header/corner-donuts/hed-don_lg.webp") 1x), -webkit-image-set(url("/src/images/header/background-layout/background_lg.webp") 1x);
     
         // retinized 2x background image
         @include mq(retina) {
-            background-image: url("/src/images/header/background-layout/background_lg@2x.png");
+            background-image: url("/src/images/header/spoon/spoon_lg@2x.png"), url("/src/images/header/corner-donuts/hed-don_lg@2x.png"), url("/src/images/header/background-layout/background_lg@2x.png");
         }
-        background-image: -webkit-image-set(url("/src/images/header/background-layout/background_lg@2x.webp") 2x);
+        // background-image: -webkit-image-set(url("/src/images/header/corner-donuts/hed-don_lg@2x.webp") 2x), -webkit-image-set(url("/src/images/header/background-layout/background_lg@2x.webp") 2x);
     }
 }
 
@@ -59,14 +61,16 @@
     */
     background-repeat: no-repeat;
     
-    background-size: 100% 1337px;
-    background-image: url('/src/images/reviews/background-layout/background_sm.png');
-    background-image: -webkit-image-set(url('/src/images/reviews/background-layout/background_sm.webp') 1x);
+    background-size: auto, 100% 1337px;
+    background-position: right bottom, top;
+    // background-image: -webkit-image-set(url('/src/images/reviews/background-layout/background_sm.webp') 1x);
+    background-image: url("/src/images/footer/wheat-flour_sm.png"), url('/src/images/reviews/background-layout/background_sm.png');
+    // background-image: -webkit-image-set(url('/src/images/reviews/background-layout/background_sm.webp') 1x);
     
     //retinized 2x background image
     @include mq(retina) {
-        background-image: url("/src/images/reviews/background-layout/background_sm@2x.png");
-        background-image: -webkit-image-set(url("/src/images/reviews/background-layout/background_sm@2x.webp") 2x);
+        background-image: url("/src/images/footer/wheat-flour_sm@2x.png"), url("/src/images/reviews/background-layout/background_sm@2x.png");
+        // background-image: -webkit-image-set(url("/src/images/reviews/background-layout/background_sm@2x.webp") 2x);
     }
     
     /**
@@ -75,15 +79,15 @@
     |============================
     */
     @include mq(tablet) {
-        background-size: 100% 1512px;
-        background-image: url("/src/images/reviews/background-layout/background_md.png");
-        background-image: -webkit-image-set(url("/src/images/reviews/background-layout/background_md.webp") 1x);
+        background-size: auto, 100% 1519px;
+        background-image: url("/src/images/footer/wheat-flour_md.png"), url("/src/images/reviews/background-layout/background_md.png");
+        // background-image: -webkit-image-set(url("/src/images/reviews/background-layout/background_md.webp") 1x);
     
         // retinized 2x background image
         @include mq(retina) {
-            background-image: url("/src/images/reviews/background-layout/background_md@2x.png");
+            background-image: url("/src/images/footer/wheat-flour_md@2x.png"), url("/src/images/reviews/background-layout/background_md@2x.png");
         }
-        background-image: -webkit-image-set(url("/src/images/reviews/background-layout/background_md@2x.webp") 2x);
+        // background-image: -webkit-image-set(url("/src/images/reviews/background-layout/background_md@2x.webp") 2x);
     }
     
     /**
@@ -92,14 +96,16 @@
     |============================
     */
     @include mq(desktop) {
-        background-size: 100% 1861px;
-        background-image: url("/src/images/reviews/background-layout/background_lg.png");
-        background-image: -webkit-image-set(url("/src/images/reviews/background-layout/background_lg.webp") 1x);
+        padding-top: 36px;
+        
+        background-size: auto, 100% 1861px;
+        background-image: url("/src/images/footer/wheat-flour_lg.png"), url("/src/images/reviews/background-layout/background_lg.png");
+        // background-image: -webkit-image-set(url("/src/images/reviews/background-layout/background_lg.webp") 1x);
     
         // retinized 2x background image
         @include mq(retina) {
-            background-image: url("/src/images/reviews/background-layout/background_lg@2x.png");
+            background-image: url("/src/images/footer/wheat-flour_lg@2x.png"), url("/src/images/reviews/background-layout/background_lg@2x.png");
         }
-        background-image: -webkit-image-set(url("/src/images/reviews/background-layout/background_lg@2x.webp") 2x);
+        // background-image: -webkit-image-set(url("/src/images/reviews/background-layout/background_lg@2x.webp") 2x);
     } 
 }

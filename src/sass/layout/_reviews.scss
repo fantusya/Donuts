@@ -42,14 +42,17 @@
     }
 }
 
+// .slider__text {
+//     display: none;
+// }
+
 .slider__text--indent {
     margin-bottom: 32px;
-    display: none;
 }
 
-.swiper-slide-active .slider__text {
-    display: block;
-}
+// .swiper-slide-active .slider__text {
+//     display: block;
+// }
 
 .pagination {
     position: static;

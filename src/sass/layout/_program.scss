@@ -4,12 +4,22 @@
     @include mq(tablet){
         padding-bottom: 50px;
     }
+
+    @include mq(desktop){
+        padding-bottom: 41px;
+    }
 }
 
 .program__container {
     @include mq(tablet){
         display: flex;
         gap: 32px;
+    }
+
+    @include mq(desktop){
+        padding-left: 123px;
+        padding-right: 107px;
+        gap: 142px;
     }
 }
 
@@ -18,12 +28,22 @@
 }
 
 .program__first-text-block-paragraph {
-    @include mq(tablet) {
-        max-width: 330px;
+    &--indent {
+        margin-bottom: 8px;
+    }
+}
+
+.program__text-block {
+    max-width: 339px;
+
+    @include mq(desktop){
+        max-width: 392px;
     }
 
     &--indent {
-        margin-bottom: 8px;
+        @include mq(mobile-only){
+            margin-bottom: 55px;
+        }
     }
 }
 
@@ -49,13 +69,26 @@
     display: none;
 }
 
-.read-more-btn__program--indent {
-    margin-bottom: 55px;
+.read-more-btn__program,
+.read-less-btn__program {
+    @include mq(desktop) {
+        display: none;
+    }
 }
 
-.read-less-btn__program--indent{
-    margin-bottom: 55px;
+.read-more-text__program.invisible {
+    @include mq(desktop) {
+        display: block;
+    }
 }
+
+// .read-more-btn__program--indent {
+//     margin-bottom: 55px;
+// }
+
+// .read-less-btn__program--indent{
+//     margin-bottom: 55px;
+// }
 
 .event-info__block {
     width: 280px;
@@ -69,20 +102,23 @@
     @include mq(tablet) {
         width: 336px;
     }
+
+    @include mq(desktop) {
+        width: 500px;
+    }
 }
 
 .event-info__list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    
+    @include mq(mobile-only) {
+        gap: 20px;
+    }
 
     @include mq(event-section) {
         gap: 60px;
-    }
-
-    @include mq(tablet){
-        gap: 29px;
     }
 }
 
@@ -107,6 +143,21 @@
     @include mq(tablet){
         width: 152px;
         height: 152px;
+
+        gap: 8px;
+
+        background-size: 21px 21px;
+        background-position: left 50% bottom 18px;
+    }
+
+    @include mq(desktop){
+        width: 180px;
+        height: 180px;
+
+        gap: 16px;
+
+        background-size: 21px 21px;
+        background-position: left 50% bottom 18px;
     }
 }
 
@@ -128,17 +179,45 @@
 
 .event-info__item:nth-child(even) {
     margin-top: 36px;
+
+    @include mq(tablet) {
+        margin-top: 60px;
+    }
+
+    @include mq(desktop) {
+        margin-top: 127px;
+    }
+}
+
+.event-info__item:nth-child(odd) {
+    // margin-top: 36px;
+
+    @include mq(tablet) {
+        margin-right: 29px;
+    }
+
+    @include mq(desktop) {
+        margin-right: 140px;
+    }
 }
 
 .event-info__title {
     font-family: 'Caveat Brush', cursive;
     @include fonts(400, 18px, 23px);
     color: var(--secondary-text-cl);
+
+    @include mq(desktop) {
+        @include fonts(400, 24px, 30px);
+    }
 }
 
 .event-info__text {
     @include fonts(400, 14px, 17px);
     color: var(--secondary-text-cl);
+
+    @include mq(desktop) {
+        @include fonts(400, 16px, 20px);
+    }
 }
 
 .event-info__img {
