@@ -21,6 +21,7 @@
     padding-top: 25px;
 }
 
+
 .form-input {
     padding: 3px;
     color: var(--main-text-cl);
@@ -89,4 +90,20 @@
         color: var(--button-bg-cl);
         transform: translateY(5px);
     }
+}
+
+.registration__form-label.error {
+    color: red;
+}
+
+.registration__form-input.error {
+    border-bottom: 1px dashed red;
+}
+
+.contacts__form-label.error {
+    color: red;
+}
+
+.contacts__form-input.error {
+    border-bottom: 1px dashed red;
 }

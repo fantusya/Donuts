@@ -42,17 +42,27 @@
     }
 }
 
-// .slider__text {
-//     display: none;
-// }
+.slider__img {
+    @include mq(tablet){
+        width: 336px;
+    }
+
+    @include mq(desktop){
+        width: 394px;
+    }
+}
+
+.slider__text {
+    opacity: 0;
+}
+
+.swiper-slide-active .slider__text {
+    opacity: 1;
+}
 
 .slider__text--indent {
     margin-bottom: 32px;
 }
-
-// .swiper-slide-active .slider__text {
-//     display: block;
-// }
 
 .pagination {
     position: static;

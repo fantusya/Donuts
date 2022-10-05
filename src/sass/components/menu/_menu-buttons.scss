@@ -9,10 +9,6 @@
     cursor: pointer;
 
     &--open {
-        @include mq(tablet) {
-            padding: 10px;
-            border-radius: 30%;
-        }
         margin-left: auto;
     }
 

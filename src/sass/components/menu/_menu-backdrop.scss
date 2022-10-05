@@ -13,6 +13,10 @@ body.show-menu .menu {
     opacity: 0;
     visibility: hidden;
     transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+
+    @include mq(desktop) {
+        display: none;
+    }
 }
 
 .menu {

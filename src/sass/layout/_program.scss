@@ -82,14 +82,6 @@
     }
 }
 
-// .read-more-btn__program--indent {
-//     margin-bottom: 55px;
-// }
-
-// .read-less-btn__program--indent{
-//     margin-bottom: 55px;
-// }
-
 .event-info__block {
     width: 280px;
     margin-left: auto;
@@ -223,5 +215,14 @@
 .event-info__img {
     position: absolute;
     top: -60%;
-    transform: translateY(50%);
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    @include mq(tablet) {
+        width: 83px;
+    }
+
+     @include mq(desktop) {
+        width: 97px;
+    }
 }

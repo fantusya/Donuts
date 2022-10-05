@@ -1,3 +1,7 @@
+import Swiper from 'swiper/swiper-bundle';
+// import styles bundle
+import 'swiper/swiper-bundle.css';
+
 const swiper = new Swiper('.reviews__slider', {
   // Optional parameters
   loop: true,

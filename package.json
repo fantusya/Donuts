@@ -19,7 +19,9 @@
   },
   "dependencies": {
     "modern-normalize": "^1.1.0",
-    "swiper": "^8.4.2"
+    "notiflix": "^3.2.5",
+    "swiper": "^8.4.2",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",

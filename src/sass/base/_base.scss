@@ -3,6 +3,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body.show-menu {
+    overflow: hidden;
+}
+
 img {
     display: block;
     max-width: 100%;

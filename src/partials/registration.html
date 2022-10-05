@@ -20,6 +20,7 @@
       </div>
       <div class="registration-form__container">
         <form
+          name="registration"
           class="registration-form__form registration-form__form--indent"
           autocomplete="off"
         >
@@ -35,7 +36,7 @@
                 class="form-input registration__form-input"
                 type="text"
                 name="username"
-                placeholder=" "
+                placeholder="Jane"
               />
               <span class="form-label registration__form-label">Your name</span>
             </label>
@@ -44,7 +45,7 @@
                 class="form-input registration__form-input"
                 type="tel"
                 name="userphone"
-                placeholder=" "
+                placeholder="095 555 55 00"
               />
               <span class="form-label registration__form-label"
                 >Phone number</span
@@ -55,12 +56,12 @@
                 class="form-input registration__form-input"
                 type="email"
                 name="usermail"
-                placeholder=" "
+                placeholder="donut@gmail.com"
               />
               <span class="form-label registration__form-label">Email</span>
             </label>
           </div>
-          <button class="submit-btn register-btn" type="submit">
+          <button name="btn" class="submit-btn register-btn" type="submit">
             Register
           </button>
         </form>

@@ -1,17 +1,13 @@
 .header__section {
-    padding-top: 8px;
-    padding-bottom: 16px;
+    @include mq(mobile-only) {
+        padding-top: 8px;
+        padding-bottom: 16px;
+    }
 
-    @include mq(tablet){
-        padding-top: 36px;
-        padding-bottom: 69px;
+    @include mq(desktop) {
+        padding-top: 38px;
     }
 }
-
-// .header__container {
-
-//     text-align: center;
-// }
 
 .header {
     /**
@@ -34,23 +30,29 @@
             // background-image: -webkit-image-set(url("/src/images/header/corner-donuts/hed-don_sm@2x.webp") 2x);
         }
     }
-    
-    /**
-    |============================
-    | background image for tablet version
-    |============================
-    */
+}
+
+.header__container {
     @include mq(tablet-only) {
-        background-position: top right 100px;
-        background-image: url("/src/images/header/corner-donuts/hed-don_md.png");
-        // background-image: -webkit-image-set(url("/src/images/header/corner-donuts/hed-don_md.webp") 1x);
-    
-        // retinized 2x background image
-        @include mq(retina) {
-            background-image: url("/src/images/header/corner-donuts/hed-don_md@2x.png"); 
-            // background-image: -webkit-image-set(url("/src/images/header/corner-donuts/hed-don_md@2x.webp") 2x);
+        padding-top: 36px;
+        padding-bottom: 69px;
+         /**
+        |============================
+        | background image for tablet version
+        |============================
+        */
+        @include mq(tablet-only) {
+            background-repeat: no-repeat;
+            background-position: top right 117px;
+            background-image: url("/src/images/header/corner-donuts/hed-don_md.png");
+            // background-image: -webkit-image-set(url("/src/images/header/corner-donuts/hed-don_md.webp") 1x);
+            
+            // retinized 2x background image
+            @include mq(retina) {
+                background-image: url("/src/images/header/corner-donuts/hed-don_md@2x.png"); 
+                // background-image: -webkit-image-set(url("/src/images/header/corner-donuts/hed-don_md@2x.webp") 2x);
+            }
         }
-       
     }
 }
 
@@ -81,7 +83,6 @@
 }
 
 .header-nav__logo-link--indent {
-    // margin-right: auto;
     margin-left: auto;
 
     @include mq(tablet) {
@@ -91,6 +92,16 @@
 
     @include mq(desktop) {
         margin-right: 0;
+    }
+}
+
+.header-nav__logo-img {
+    @include mq(tablet) {
+        width: 96px;
+    }
+
+    @include mq(desktop) {
+        width: 158px;
     }
 }
 
