@@ -12,6 +12,11 @@
 
 .reviews__container {
     text-align: center;
+
+    @include mq(desktop){
+        padding-left: 60px;
+        padding-right: 60px;
+    }
 }
 
 .reviews__title--indent {
@@ -51,6 +56,11 @@
         width: 394px;
     }
 }
+
+// .slider__text-block {
+//     padding-left: 50px;
+//     padding-right: 50px;
+// }
 
 .slider__text {
     opacity: 0;

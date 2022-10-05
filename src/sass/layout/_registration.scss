@@ -32,12 +32,12 @@
         // );
     
         background-image: url("/src/images/registration/donut/don_md.png"), url('/src/images/registration/confetti/confetti_md.png');
-        background-image: -webkit-image-set(url("/src/images/registration/donut/don_md.webp") 1x), -webkit-image-set(url("/src/images/registration/confetti/confetti_md.webp") 1x);
+        // background-image: -webkit-image-set(url("/src/images/registration/donut/don_md.webp") 1x), -webkit-image-set(url("/src/images/registration/confetti/confetti_md.webp") 1x);
         // // retinized 2x background image
             @include mq(retina) {
                 background-image: url("/src/images/registration/donut/don_md@2x.png"), url('/src/images/registration/confetti/confetti_md@2x.png');
             }
-                background-image: -webkit-image-set(url("/src/images/registration/donut/don_md@2x.webp") 2x), -webkit-image-set(url("/src/images/registration/confetti/confetti_md@2x.webp") 2x);
+                // background-image: -webkit-image-set(url("/src/images/registration/donut/don_md@2x.webp") 2x), -webkit-image-set(url("/src/images/registration/confetti/confetti_md@2x.webp") 2x);
         }
    
      @include mq(desktop) {
@@ -50,14 +50,14 @@
         background-repeat: no-repeat;
         background-position: 10% 0, 100% -400%;
         background-image: url("/src/images/registration/donut/don_lg.png"), url('/src/images/registration/confetti/confetti_lg.png');
-            background-image: -webkit-image-set(url("/src/images/registration/donut/don_lg.webp") 1x),
-                -webkit-image-set(url("/src/images/registration/confetti/confetti_lg.webp") 1x);
+            // background-image: -webkit-image-set(url("/src/images/registration/donut/don_lg.webp") 1x),
+            //     -webkit-image-set(url("/src/images/registration/confetti/confetti_lg.webp") 1x);
         
         // retinized 2x background image
         @include mq(retina) {
             background-image: url("/src/images/registration/donut/don_lg@2x.png"), url('/src/images/registration/confetti/confetti_lg@2x.png');
-            background-image: -webkit-image-set(url("/src/images/registration/donut/don_lg@2x.webp") 2x),
-                    -webkit-image-set(url("/src/images/registration/confetti/confetti_lg@2x.webp") 2x);
+            // background-image: -webkit-image-set(url("/src/images/registration/donut/don_lg@2x.webp") 2x),
+            //         -webkit-image-set(url("/src/images/registration/confetti/confetti_lg@2x.webp") 2x);
         }
             
     }

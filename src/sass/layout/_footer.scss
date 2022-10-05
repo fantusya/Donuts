@@ -83,9 +83,27 @@
     align-items: center;
 
     color: inherit;
+   transition: color var(--transition-duration) var(--transition-timing-function);
+
+    &:hover,
+    &:focus {
+        color: var(--button-bg-cl);
+    }
+
+    &:hover .phone-icon,
+    &:focus .phone-icon {
+        color: var(--button-bg-cl);
+        animation: vibrate-2 0.3s linear infinite both;
+    }
+
+    &:hover .location-icon,
+    &:focus .location-icon {
+        color: var(--button-bg-cl);
+        animation: bounce-top 0.9s both;    }
 }
 
 .footer__contacts-svg {
+    fill: currentColor;
     width: 13px;
     height: 13px;
 
@@ -93,3 +111,76 @@
         margin-right: 4px;
     }
 }
+
+@keyframes vibrate-2 {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(2px, -2px);
+    }
+
+    40% {
+        transform: translate(2px, 2px);
+    }
+
+    60% {
+        transform: translate(-2px, 2px);
+    }
+
+    80% {
+        transform: translate(-2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes bounce-top {
+    0% {
+        transform: translateY(-25px);
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        transform: translateY(-24px);
+        animation-timing-function: ease-in;
+    }
+
+    65% {
+        transform: translateY(-12px);
+        animation-timing-function: ease-in;
+    }
+
+    82% {
+        transform: translateY(-6px);
+        animation-timing-function: ease-in;
+    }
+
+    93% {
+        transform: translateY(-4px);
+        animation-timing-function: ease-in;
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+    }
+
+    100% {
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}
+

@@ -120,8 +120,36 @@
 }
 
 .desktop-header__link {
+    position: relative;
+    padding-bottom: 8px;
     @include fonts(400, 18px, 22px);
-        color: var(--main-text-cl);
+    color: var(--main-text-cl);
+    background-color: transparent;
+
+    transition: color var(--transition-duration) var(--transition-timing-function),
+    background-color var(--transition-duration) var(--transition-timing-function);
+
+    &::after {
+        content: '';
+        width: 0%;
+        height: 4px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color:var(--hover-text-cl);
+
+        transition: width var(--transition-duration) var(--transition-timing-function);
+    }
+    
+    &:hover,
+    &:focus {
+        color: var(--btn-hover-bg-cl);
+    }
+
+    &:hover::after,
+    &:focus::after {
+        width: 100%;
+    }
 }
 
 .hero__block {
