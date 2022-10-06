@@ -21,7 +21,6 @@
     padding-top: 25px;
 }
 
-
 .form-input {
     padding: 3px;
     color: var(--main-text-cl);
@@ -41,7 +40,13 @@
     }
 }
 
-.form-input.registration__form-input {
+.form-input::placeholder {
+    opacity: 0;
+
+    transition: opacity 400ms ease;
+}
+
+.registration__form-input {
     width: 264px;
 
     @include mq(tablet) {
@@ -53,7 +58,7 @@
     }
 }
 
-.form-input.contacts__form-input {
+.contacts__form-input {
     width: 280px;
 
     @include mq(tablet) {
@@ -63,12 +68,6 @@
     @include mq(desktop) {
         width: 394px;
     }
-}
-
-.form-input::placeholder {
-    opacity: 0;
-
-    transition: opacity 400ms ease;
 }
 
 .form-input:focus::placeholder {
