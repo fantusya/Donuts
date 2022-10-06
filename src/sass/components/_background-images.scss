@@ -41,7 +41,7 @@
     */
     @include mq(desktop) {
         background-size: auto, auto, 100% 1036px;
-        background-position: left 65%, top right, top;
+        background-position: left 500px, top right, top;
         background-image: url("/src/images/header/spoon/spoon_lg.png"), url("/src/images/header/corner-donuts/hed-don_lg.png"), url("/src/images/header/background-layout/background_lg.png");
         // background-image: -webkit-image-set(url("/src/images/header/corner-donuts/hed-don_lg.webp") 1x), -webkit-image-set(url("/src/images/header/background-layout/background_lg.webp") 1x);
     
@@ -52,6 +52,7 @@
         // background-image: -webkit-image-set(url("/src/images/header/corner-donuts/hed-don_lg@2x.webp") 2x), -webkit-image-set(url("/src/images/header/background-layout/background_lg@2x.webp") 2x);
     }
 }
+
 
 .reviews-registration-contacts__wrapper {
     /**
