@@ -1,36 +1,18 @@
 :root {
-    /* fonts */
-    // --main-font: 'DM Sans', sans-serif;
-    // --title-font: 'Titan One', cursive;
-
     /* text colors*/
     --main-text-cl: #2E2520;
     --secondary-text-cl: #000000;
     --hover-text-cl: #876655;
     --button-text-cl: #ffffff;
     --decoration-text-cl: #AB816C80;
-    // --black-cl: #000000;
-    // --about-cl: #907e82;
+    --placeholder-cl: #C0C0C0;
 
     /* background colors */
     --main-bg-cl: #fffff9;
     --button-bg-cl: #AB816C;
     --btn-hover-bg-cl: #826759;
     --event-bg-cl: #FEF3E4;
-    // --light-pink-bg-cl: #fff5f6;
-    // --decoration-cl: #c7133e;
-
-    // btn colors
-    // --btn-accent-cl: #d41342;
-
-    // Order-form colors
-    // --error-cl: #e22f37;
-    // --all-ok-cl: #ffb8ca;
-    // --warning-cl: #936e1e;
-
-    /*  grid items*/
-    // --items: 1;
-    // --indent: 30px;
+    --error-cl: #DC143C;
 
     /* animation */
     --transition-duration: 300ms;
