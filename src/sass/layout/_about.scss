@@ -13,7 +13,6 @@
 .about__container {
     @include mq(tablet){
         display: flex;
-        // align-items: center;
         gap: 32px;
     }
 
@@ -30,6 +29,7 @@
     margin-right: auto;
 
     @include mq(mobile-only) {
+        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 6s both;
         &--indent {
             margin-bottom: 16px;
         }
@@ -37,6 +37,8 @@
 
     @include mq(tablet) {
         width: 337px;
+
+        animation: jello-horizontal 5s infinite both;
     }
 
     @include mq(desktop) {

@@ -1,54 +1,5 @@
 .footer__section {
     padding-bottom: 20px;
-    // /**
-    // |============================
-    // | background image for mobile version
-    // |============================
-    // */
-    // background-repeat: no-repeat;
-    // background-position: right bottom;
-    // background-origin: padding-box;
-    
-    // background-image: url("/src/images/footer/wheat-flour_sm.png");
-    // // background-image: -webkit-image-set(url("/src/images/footer/wheat-flour_sm.webp") 1x);
-
-    // //retinized 2x background image
-    // @include mq(retina) {
-    //     background-image: url("/src/images/footer/wheat-flour_sm@2x.png");
-    //     // background-image: -webkit-image-set(url("/src/images/footer/wheat-flour_sm@2x.webp") 2x);
-    // }
-    
-    // /**
-    // |============================
-    // | background image for tablet version
-    // |============================
-    // */
-    // @include mq(tablet) {
-    //     background-image: url("/src/images/footer/wheat-flour_md.png");
-    //     // background-image: -webkit-image-set(url("/src/images/footer/wheat-flour_md.webp") 1x);
-    
-    //     // retinized 2x background image
-    //     @include mq(retina) {
-    //         background-image: url("/src/images/footer/wheat-flour_md@2x.png");       
-    //     }
-    //     // background-image: -webkit-image-set(url("/src/images/footer/wheat-flour_md@2x.webp") 2x);
-    // }
-    
-    // /**
-    // |============================
-    // | background image for desctop version
-    // |============================
-    // */
-    // @include mq(desktop) {
-    //     background-image: url("/src/images/footer/wheat-flour_lg.png");
-    //     // background-image: -webkit-image-set(url("/src/images/footer/wheat-flour_lg.webp") 1x);
-    
-    //     // background image for tablet version
-    //     @include mq(retina) {
-    //         background-image: url("/src/images/footer/wheat-flour_lg@2x.png");    
-    //     }
-    //     // background-image: -webkit-image-set(url("/src/images/footer/wheat-flour_lg@2x.webp") 2x);
-    // }
 }
 
 .footer__contacts-container {
@@ -83,23 +34,12 @@
     align-items: center;
 
     color: inherit;
-   transition: color var(--transition-duration) var(--transition-timing-function);
+    transition: color var(--transition-duration) var(--transition-timing-function);
 
     &:hover,
     &:focus {
         color: var(--button-bg-cl);
     }
-
-    &:hover .phone-icon,
-    &:focus .phone-icon {
-        color: var(--button-bg-cl);
-        animation: vibrate-2 0.3s linear infinite both;
-    }
-
-    &:hover .location-icon,
-    &:focus .location-icon {
-        color: var(--button-bg-cl);
-        animation: bounce-top 0.9s both;    }
 }
 
 .footer__contacts-svg {
@@ -110,77 +50,17 @@
     &--indent {
         margin-right: 4px;
     }
-}
 
-@keyframes vibrate-2 {
-    0% {
-        transform: translate(0);
-    }
-
-    20% {
-        transform: translate(2px, -2px);
-    }
-
-    40% {
-        transform: translate(2px, 2px);
-    }
-
-    60% {
-        transform: translate(-2px, 2px);
-    }
-
-    80% {
-        transform: translate(-2px, -2px);
-    }
-
-    100% {
-        transform: translate(0);
+    .footer__contacts-link:hover &,
+    .footer__contacts-link:focus & {
+        color: var(--button-bg-cl);
     }
 }
 
-@keyframes bounce-top {
-    0% {
-        transform: translateY(-25px);
-        animation-timing-function: ease-in;
-        opacity: 1;
-    }
-
-    24% {
-        opacity: 1;
-    }
-
-    40% {
-        transform: translateY(-24px);
-        animation-timing-function: ease-in;
-    }
-
-    65% {
-        transform: translateY(-12px);
-        animation-timing-function: ease-in;
-    }
-
-    82% {
-        transform: translateY(-6px);
-        animation-timing-function: ease-in;
-    }
-
-    93% {
-        transform: translateY(-4px);
-        animation-timing-function: ease-in;
-    }
-
-    25%,
-    55%,
-    75%,
-    87% {
-        transform: translateY(0px);
-        animation-timing-function: ease-out;
-    }
-
-    100% {
-        transform: translateY(0px);
-        animation-timing-function: ease-out;
-        opacity: 1;
-    }
+.phone-icon {
+    animation: swing 5s ease-in-out infinite forwards;
 }
 
+.location-icon {
+    animation: bounce-top 2s ease-in-out infinite forwards;
+}

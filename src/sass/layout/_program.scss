@@ -11,6 +11,7 @@
 }
 
 .program__container {
+    display: flex;
     @include mq(tablet){
         display: flex;
         gap: 32px;
@@ -151,22 +152,26 @@
         background-size: 21px 21px;
         background-position: left 50% bottom 18px;
     }
+
+    &:hover {
+        animation: heartbeat 1.5s ease-in-out infinite both;
+    }
 }
 
 .event-info__item:nth-child(1) {
-    background-image: url(/src/images/icons.svg/chef-hat-icon.svg);
+    background-image: url("/src/images/icons.svg/chef-hat-icon.svg");
 }
 
 .event-info__item:nth-child(2) {
-    background-image: url(/src/images/icons.svg/people-icon.svg);
+    background-image: url("/src/images/icons.svg/people-icon.svg");
 }
 
 .event-info__item:nth-child(3) {
-    background-image: url(/src/images/icons.svg/clock-icon.svg);
+    background-image: url("/src/images/icons.svg/clock-icon.svg");
 }
 
 .event-info__item:nth-child(4) {
-    background-image: url(/src/images/icons.svg/chat-icon.svg);
+    background-image: url("/src/images/icons.svg/chat-icon.svg");
 }
 
 .event-info__item:nth-child(even) {
@@ -182,8 +187,6 @@
 }
 
 .event-info__item:nth-child(odd) {
-    // margin-top: 36px;
-
     @include mq(tablet) {
         margin-right: 29px;
     }
@@ -216,13 +219,22 @@
     position: absolute;
     top: -60%;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform-origin: 0px 100%;
+    transform: rotate(0deg) translate(-50%, 50%);
+
+    transition: transform 0.5s var(--transition-timing-function) ;
 
     @include mq(tablet) {
         width: 83px;
     }
 
-     @include mq(desktop) {
+    @include mq(desktop) {
         width: 97px;
     }
+
+    .event-info__item:hover & {
+        animation: rotate-in-center 1.3s ease-in-out 0.9s infinite;
+    }
 }
+
+ 
